@@ -103,3 +103,9 @@ section.wrapper {
         color: #6abc44; }
       section.wrapper #features li:nth-child(2):hover a {
         color: #55acee; }
+
+#registration.container {
+  margin: 100px auto;
+  width: 40%; }
+  #registration.container .form-control {
+    margin: 0 0 10px 0; }

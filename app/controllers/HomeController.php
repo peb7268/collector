@@ -1,7 +1,7 @@
 <?php
 
 class HomeController extends BaseController {
-    protected $layout = 'master';
+    protected $layout = 'layouts.master';
 	/*
 	|--------------------------------------------------------------------------
 	| Default Home Controller
@@ -17,7 +17,7 @@ class HomeController extends BaseController {
 
 	public function index()
 	{
-		return View::make('home');
+		return View::make('users.home');
 	}
 
 }

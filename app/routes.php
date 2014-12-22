@@ -12,3 +12,10 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/register', 'UsersController@register');
+Route::get('/login', 'UsersController@login');
+
+Route::group(array('before' => 'auth', 'prefix' => 'admin'), function()
+{
+    Route::post('/', 	'UsersController@admin_home');
+});
