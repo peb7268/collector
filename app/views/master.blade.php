@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>@yield('page_tittle')</title>
-<link rel="stylesheet" href="styles/css/styles.css" />
+    <meta charset="UTF-8">
+    <title>@yield('page_tittle')</title>
+    <link rel="stylesheet" href="styles/css/styles.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
     <body>
     @include('partials.nav')
