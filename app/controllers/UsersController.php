@@ -17,4 +17,14 @@ class UsersController extends BaseController {
     {
         return View::make('users.admin');
     }
+
+    public function auth()
+    {
+        extract(Input::only('email', 'password'));
+
+        if (Auth::attempt(array('email' => $email, 'password' => $password)))
+        {
+            return Redirect::intended('login');
+        }
+    }
 } 
